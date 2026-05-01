@@ -8,6 +8,9 @@ sys.stdout.reconfigure(encoding='utf-8')
 # Load your API key from .env file
 load_dotenv()
 
+# Initialize Claude client HERE at the top
+client = anthropic.Anthropic()
+
 # ---- STEP 1: Read the document ----
 with open("data/hedis_measures.txt", "r") as f:
     content = f.read()
@@ -27,38 +30,40 @@ for i, chunk in enumerate(chunks):
 
 print(f"SUCCESS: Loaded {len(chunks)} HEDIS measure chunks into ChromaDB")
 
-# ---- STEP 4: Search the document ----
-query = "Which patients qualify for the diabetes measure?"
+# ---- STEP 4: Test multiple queries ----
+queries = [
+    "Which patients qualify for the diabetes measure?",
+    "What is the blood pressure threshold for CBP measure?",
+    "What happens after a patient is hospitalized for mental illness?",
+    "What are the exclusions for the asthma measure?",
+    "Which measures exclude hospice care patients?"
+]
 
-results = collection.query(
-    query_texts=[query],
-    n_results=2
-)
+for query in queries:
+    print(f"\n{'='*50}")
+    print(f"Query: {query}")
 
-retrieved_docs = "\n\n".join(results["documents"][0])
-print(f"\nQuery: {query}")
-print(f"\nRetrieved from document:\n{retrieved_docs}")
+    results = collection.query(
+        query_texts=[query],
+        n_results=1
+    )
 
-# ---- STEP 5: Send to Claude with context ----
-client = anthropic.Anthropic()
+    retrieved_docs = "\n\n".join(results["documents"][0])
 
-message = client.messages.create(
-    model="claude-sonnet-4-6",
-    max_tokens=1024,
-    messages=[
-        {
-            "role": "user",
-            "content": f"""You are a healthcare data analyst assistant.
-Use ONLY the following document context to answer the question.
+    message = client.messages.create(
+        model="claude-sonnet-4-6",
+        max_tokens=512,
+        messages=[
+            {
+                "role": "user",
+                "content": f"""You are a healthcare data analyst assistant.
+Use ONLY the following context to answer briefly.
 
 Context:
 {retrieved_docs}
 
-Question: {query}
-
-Answer based only on the context provided."""
-        }
-    ]
-)
-
-print(f"\nClaude's answer:\n{message.content[0].text}")
+Question: {query}"""
+            }
+        ]
+    )
+    print(f"Answer: {message.content[0].text}")
