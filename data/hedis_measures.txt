@@ -1,0 +1,23 @@
+HEDIS CBP - Controlling Blood Pressure
+Eligible population: Adults 18-85 years with hypertension diagnosis on two separate visits.
+Control threshold: Blood pressure reading below 140/90 mmHg.
+Exclusions: ESRD, dialysis, kidney transplant, hospice, pregnancy-related hypertension.
+Measurement: Most recent BP reading during the measurement year.
+
+HEDIS CDC - Comprehensive Diabetes Care
+Eligible population: Adults 18-75 years with diabetes diagnosis.
+Measures include: HbA1c testing, eye exams, kidney disease monitoring, BP control.
+HbA1c control threshold: Less than 8% for good control.
+Exclusions: Patients in hospice care.
+
+HEDIS AMR - Asthma Medication Ratio
+Eligible population: Ages 5-64 with persistent asthma.
+Measure: Ratio of controller medications to total asthma medications.
+Target: Ratio of 0.50 or higher indicates good asthma control.
+Exclusions: COPD diagnosis, hospice care.
+
+HEDIS FUH - Follow-Up After Hospitalization for Mental Illness
+Eligible population: Patients discharged from inpatient mental health stay.
+Measure: Follow-up visit within 7 and 30 days of discharge.
+Target conditions: Major depression, bipolar disorder, schizophrenia.
+Exclusions: Patients who died during measurement year.
