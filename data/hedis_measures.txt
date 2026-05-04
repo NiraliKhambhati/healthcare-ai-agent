@@ -21,3 +21,91 @@ Eligible population: Patients discharged from inpatient mental health stay.
 Measure: Follow-up visit within 7 and 30 days of discharge.
 Target conditions: Major depression, bipolar disorder, schizophrenia.
 Exclusions: Patients who died during measurement year.
+
+HEDIS BCS - Breast Cancer Screening
+Eligible population: Women aged 50-74 years.
+Measure: Mammography screening within the past 27 months.
+Target: At least one mammogram recorded during measurement period.
+Exclusions: Bilateral mastectomy, hospice care.
+
+HEDIS COL - Colorectal Cancer Screening
+Eligible population: Adults 45-75 years.
+Measure: Appropriate colorectal cancer screening completed.
+Accepted tests: Colonoscopy every 10 years, FIT test annually, CT colonography every 5 years.
+Exclusions: Colorectal cancer diagnosis, total colectomy, hospice care.
+
+HEDIS HbA1c Testing - Diabetes HbA1c Poor Control
+Eligible population: Adults 18-75 years with diabetes.
+Poor control threshold: HbA1c greater than 9% indicates poor glycemic control.
+Measure: Percentage of diabetic patients with HbA1c above 9% — lower rate is better.
+Exclusions: Hospice care enrollment.
+
+HEDIS MMA - Medication Management for People with Asthma
+Eligible population: Ages 5-64 with persistent asthma prescribed asthma controller medication.
+Measure: Patients who remained on controller medication for at least 75% of treatment period.
+Target: 75% or higher medication possession ratio.
+Exclusions: COPD, emphysema, hospice care.
+
+CIHI HSMR - Hospital Standardized Mortality Ratio
+Definition: Ratio of actual deaths in hospital to expected deaths based on patient mix.
+Target: HSMR below 100 indicates better than expected mortality performance.
+Key diagnoses tracked: Sepsis, pneumonia, heart failure, stroke, hip fracture.
+Used by: Canadian Institute for Health Information to benchmark Canadian hospitals.
+Data source: Discharge Abstract Database (DAD).
+
+CIHI Readmission Indicator
+Definition: Unplanned readmission to any acute care hospital within 30 days of discharge.
+Tracked conditions: COPD, heart failure, hip fracture, stroke, diabetes, mental health.
+Target: Readmission rate below provincial average.
+Canadian benchmark: National average 30-day readmission rate is approximately 8.5%.
+Data source: CIHI Discharge Abstract Database (DAD).
+
+CIHI Patient Safety Indicators
+Definition: Measures of adverse events and patient safety incidents in Canadian hospitals.
+Key indicators: Surgical site infections, medication errors, falls with injury, pressure injuries.
+Reporting: Mandatory reporting to provincial health authorities.
+Framework: Based on Canadian Patient Safety Institute (CPSI) guidelines.
+
+CIHI ALC - Alternate Level of Care
+Definition: Patients occupying acute care beds while waiting for more appropriate care setting.
+Target: ALC rate below 15% of total patient days.
+Impact: High ALC rates indicate capacity pressures and care transition gaps.
+Common destinations: Long-term care, home care, rehabilitation facilities.
+Canadian context: ALC is a major challenge in Canadian hospitals due to aging population.
+
+ICD-10 Heart Failure Codes
+Primary code: I50 - Heart failure.
+Subtypes: I50.0 Congestive heart failure, I50.1 Left ventricular failure, I50.9 Heart failure unspecified.
+Related codes: I11.0 Hypertensive heart disease with heart failure, I13.0 Hypertensive heart and renal disease.
+Used in: HEDIS, CIHI readmission tracking, CMS quality programs.
+30-day readmission risk: Approximately 25% for heart failure patients.
+
+ICD-10 Diabetes Codes
+Primary code: E11 - Type 2 diabetes mellitus.
+Subtypes: E11.0 with hyperosmolarity, E11.1 with ketoacidosis, E11.65 with hyperglycemia.
+Complications: E11.2 kidney complications, E11.3 ophthalmic complications, E11.4 neurological complications.
+Used in: HEDIS CDC measure, chronic disease management programs.
+HbA1c monitoring: Required every 3-6 months for uncontrolled diabetes.
+
+ICD-10 Mental Health Codes
+Major depression: F32 depressive episode, F33 recurrent depressive disorder.
+Bipolar disorder: F31 bipolar affective disorder.
+Schizophrenia: F20 schizophrenia, F25 schizoaffective disorder.
+Anxiety: F41 other anxiety disorders, F40 phobic anxiety disorders.
+Used in: HEDIS FUH measure, mental health quality reporting.
+Follow-up requirement: 7-day and 30-day post-discharge visits mandatory for quality compliance.
+
+ICD-10 Hypertension Codes
+Primary code: I10 - Essential (primary) hypertension.
+Secondary: I15 - Secondary hypertension.
+With heart disease: I11 - Hypertensive heart disease.
+With renal disease: I12 - Hypertensive renal disease.
+Used in: HEDIS CBP measure, cardiovascular risk stratification.
+Blood pressure target: Below 140/90 mmHg for HEDIS compliance.
+
+ICD-10 Readmission Tracking Codes
+Sepsis: A41.9 sepsis unspecified, A41.0 sepsis due to Staphylococcus aureus.
+Pneumonia: J18.9 pneumonia unspecified, J18.1 lobar pneumonia.
+COPD exacerbation: J44.1 COPD with acute exacerbation.
+Stroke: I63 cerebral infarction, I64 stroke not specified as hemorrhage or infarction.
+Hip fracture: S72 fracture of femur, commonly used in elderly fall tracking.
