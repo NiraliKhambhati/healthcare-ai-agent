@@ -1,0 +1,7 @@
+anthropic
+chromadb
+streamlit
+python-dotenv
+plotly
+pandas
+pypdf
